@@ -10,7 +10,13 @@ function jumlahVolumeDuaKubus(a,b){
     return total=volumeA+volumeB;
 }
 
+//refactoring function
+function jumlahVolumeDuaKubus2(a,b){
+    return a*a*a + b*b*b;
+}
+
 var a = prompt('Masukkan nilai ke-1 : ');
 var b = prompt('Masukkan nilai ke-2 : ');
 var hasil;
-alert(jumlahVolumeDuaKubus(a,b));
+// alert(jumlahVolumeDuaKubus(a,b));
+alert(jumlahVolumeDuaKubus2(a,b));
