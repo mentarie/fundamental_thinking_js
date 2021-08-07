@@ -7,8 +7,10 @@ function jumlahVolumeDuaKubus(a,b){
     volumeB=b*b*b;
 
     //jumlahkan
-    total=volumeA+volumeB;
-    return total;
+    return total=volumeA+volumeB;
 }
 
-console.log(jumlahVolumeDuaKubus(8,3));
+var a = prompt('Masukkan nilai ke-1 : ');
+var b = prompt('Masukkan nilai ke-2 : ');
+var hasil;
+alert(jumlahVolumeDuaKubus(a,b));
