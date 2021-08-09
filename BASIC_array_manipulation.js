@@ -6,7 +6,7 @@
 // console.log(arr[1]);
 
 // 2. menghapus isi array
-// var arr = ["m", "e", "r"];
+// var arr = ["mentari", "enggar", "rizki"];
 // arr[1]=undefined;
 // console.log(arr);
 
@@ -18,6 +18,12 @@
 // }
 
 // 4. method join
+// var arr = ["mentari", "enggar", "rizki"];
+// console.log(arr.join());
+// console.log(arr.join('-'));
+
+// 5. push & pop
 var arr = ["mentari", "enggar", "rizki"];
-console.log(arr.join());
-console.log(arr.join('-'));
+arr.push('hawali');
+arr.pop();
+console.log(arr.join(' - '));
