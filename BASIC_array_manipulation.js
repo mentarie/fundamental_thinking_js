@@ -22,8 +22,14 @@
 // console.log(arr.join());
 // console.log(arr.join('-'));
 
-// 5. push & pop
+// 5. push & pop (akhir array)
+// var arr = ["mentari", "enggar", "rizki"];
+// arr.push('hawali');
+// arr.pop();
+// console.log(arr.join(' - '));
+
+// 6. unshift & shift (awal array)
 var arr = ["mentari", "enggar", "rizki"];
-arr.push('hawali');
-arr.pop();
+// arr.unshift('mentari');
+arr.shift();
 console.log(arr.join(' - '));
