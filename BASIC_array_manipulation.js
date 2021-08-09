@@ -11,8 +11,13 @@
 // console.log(arr);
 
 // 3. menampilkan isi array
+// var arr = ["mentari", "enggar", "rizki"];
+// for (let i = 0; i < arr.length; i++) {
+//     const element = arr[i];
+//     console.log(element);
+// }
+
+// 4. method join
 var arr = ["mentari", "enggar", "rizki"];
-for (let i = 0; i < arr.length; i++) {
-    const element = arr[i];
-    console.log(element);
-}
+console.log(arr.join());
+console.log(arr.join('-'));
