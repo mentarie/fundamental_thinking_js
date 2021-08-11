@@ -34,8 +34,10 @@
 // arr.shift();
 // console.log(arr.join(' - '));
 
-// 7. slice & spice
-var arr = ["mentari", "enggar", "rizki"];
-arr.splice(1); //slice(indexAwal, mauDihapusBerapa, elemenBaru1, dst)
-arr.splice(2,0,'hawali');
-console.log(arr.join(' - '));
+// 7. splice & slice
+var arr = ['mentari', 'enggar', 'rizki', 'fadhlan', 'hawali'];
+// arr.splice(1); //slice(indexAwal, mauDihapusBerapa, elemenBaru1, dst)
+// arr.splice(2,0,'hawali');
+// arr.splice(1,2, 'fadhlan', 'ai');
+var arr2 = arr.slice(1,3); // slice(awal, akhir)
+console.log(arr2.join(' - '));
