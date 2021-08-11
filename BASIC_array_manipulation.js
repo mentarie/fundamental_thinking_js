@@ -29,7 +29,13 @@
 // console.log(arr.join(' - '));
 
 // 6. unshift & shift (awal array)
-var arr = ["mentari", "enggar", "rizki"];
+// var arr = ["mentari", "enggar", "rizki"];
 // arr.unshift('mentari');
-arr.shift();
+// arr.shift();
+// console.log(arr.join(' - '));
+
+// 7. slice & spice
+var arr = ["mentari", "enggar", "rizki"];
+arr.splice(1); //slice(indexAwal, mauDihapusBerapa, elemenBaru1, dst)
+arr.splice(2,0,'hawali');
 console.log(arr.join(' - '));
