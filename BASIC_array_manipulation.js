@@ -55,3 +55,8 @@
 //     return e*2;
 // })
 // console.log(angka2.join(' - '));
+
+// 10. sort (urutan angka)
+var angka = [1,3,5,2,6,7,4,9,8];
+angka.sort();
+console.log(angka.join(' - '));
