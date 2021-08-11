@@ -42,9 +42,16 @@
 // var arr2 = arr.slice(1,3); // slice(awal, akhir)
 // console.log(arr2.join(' - '));
 
-// 8. forEach
-var angka = [1,2,3,4,5,6,7,8];
-var nama = ['mentari', 'enggar', 'rizki', 'fadhlan', 'hawali'];
-nama.forEach(function(e,i){
-    console.log('Mahasiswa ke-'+i+' adalah: '+e);
-})
+// 8. forEach (ga mengembalikan/return)
+// var angka = [1,2,3,4,5,6,7,8];
+// var nama = ['mentari', 'enggar', 'rizki', 'fadhlan', 'hawali'];
+// nama.forEach(function(e,i){
+//     console.log('Mahasiswa ke-'+i+' adalah: '+e);
+// })
+
+// 9. map (kayak foreach tp mengembalikan/return)
+// var angka = [1,2,3,4,5,6,7,8];
+// var angka2 = angka.map(function (e) {
+//     return e*2;
+// })
+// console.log(angka2.join(' - '));
