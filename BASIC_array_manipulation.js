@@ -35,9 +35,16 @@
 // console.log(arr.join(' - '));
 
 // 7. splice & slice
-var arr = ['mentari', 'enggar', 'rizki', 'fadhlan', 'hawali'];
+// var arr = ['mentari', 'enggar', 'rizki', 'fadhlan', 'hawali'];
 // arr.splice(1); //slice(indexAwal, mauDihapusBerapa, elemenBaru1, dst)
 // arr.splice(2,0,'hawali');
 // arr.splice(1,2, 'fadhlan', 'ai');
-var arr2 = arr.slice(1,3); // slice(awal, akhir)
-console.log(arr2.join(' - '));
+// var arr2 = arr.slice(1,3); // slice(awal, akhir)
+// console.log(arr2.join(' - '));
+
+// 8. forEach
+var angka = [1,2,3,4,5,6,7,8];
+var nama = ['mentari', 'enggar', 'rizki', 'fadhlan', 'hawali'];
+nama.forEach(function(e,i){
+    console.log('Mahasiswa ke-'+i+' adalah: '+e);
+})
