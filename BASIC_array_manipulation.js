@@ -78,3 +78,11 @@
 //     return x>5; //cuma 1 nilai
 // });
 // console.log(angkaFind);
+
+
+// 13. findIndex
+var angka = [1,3,5,2,6,7,4,9,8];
+var angkaFindIndex = angka.findIndex(function (x) {
+    return x>8; //satu nilai, "index-ke?"
+});
+console.log(angkaFindIndex);
