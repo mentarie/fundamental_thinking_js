@@ -66,8 +66,15 @@
 // console.log(angka2.join(' - '));
 
 // 11. Filter
-var angka = [1,3,5,2,6,7,4,9,8];
-var angkaFilter = angka.filter(function (x){
-    return x>5; //bisa banyak nilai, menghasilkan array
-});
-console.log(angka2.join(' - '));
+// var angka = [1,3,5,2,6,7,4,9,8];
+// var angkaFilter = angka.filter(function (x){
+//     return x>5; //bisa banyak nilai, menghasilkan array
+// });
+// console.log(angkaFilter.join(' - '));
+
+//  12. Find
+// var angka = [1,3,5,2,6,7,4,9,8];
+// var angkaFind = angka.find(function (x){
+//     return x>5; //cuma 1 nilai
+// });
+// console.log(angkaFind);
