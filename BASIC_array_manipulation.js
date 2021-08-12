@@ -57,10 +57,17 @@
 // console.log(angka2.join(' - '));
 
 // 10. sort (urutan angka)
+// var angka = [1,3,5,2,6,7,4,9,8];
+// angka.sort();
+// var angka2 = [1,2,10,3,4,5,20,30];
+// angka2.sort(function (a,b) {
+//     return a-b;
+// })
+// console.log(angka2.join(' - '));
+
+// 11. Filter
 var angka = [1,3,5,2,6,7,4,9,8];
-angka.sort();
-var angka2 = [1,2,10,3,4,5,20,30];
-angka2.sort(function (a,b) {
-    return a-b;
-})
+var angkaFilter = angka.filter(function (x){
+    return x>5; //bisa banyak nilai, menghasilkan array
+});
 console.log(angka2.join(' - '));
