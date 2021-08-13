@@ -43,7 +43,6 @@
 // console.log(arr2.join(' - '));
 
 // 8. forEach (ga mengembalikan/return)
-// var angka = [1,2,3,4,5,6,7,8];
 // var nama = ['mentari', 'enggar', 'rizki', 'fadhlan', 'hawali'];
 // nama.forEach(function(e,i){
 //     console.log('Mahasiswa ke-'+i+' adalah: '+e);
@@ -81,8 +80,8 @@
 
 
 // 13. findIndex
-var angka = [1,3,5,2,6,7,4,9,8];
-var angkaFindIndex = angka.findIndex(function (x) {
-    return x>8; //satu nilai, "index-ke?"
-});
-console.log(angkaFindIndex);
+// var angka = [1,3,5,2,6,7,4,9,8];
+// var angkaFindIndex = angka.findIndex(function (x) {
+//     return x>8; //satu nilai, "index-ke?"
+// });
+// console.log(angkaFindIndex);
