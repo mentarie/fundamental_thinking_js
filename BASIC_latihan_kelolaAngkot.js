@@ -25,10 +25,10 @@ var tambahPenumpang = function(namaPenumpang, penumpang) {
             if (penumpang[i] == undefined) {
                 penumpang[i] = namaPenumpang;
                 return penumpang;
-            } else if(penumpang.find == namaPenumpang){
+            } else if(penumpang[i] == namaPenumpang){
                 console.log('Sudah ada nama yang sama!');
                 return penumpang;
-            } else if(i == penumpang.lenght -1 ) { //cek sampai kursi terakhir
+            } else if(i == penumpang.length -1 ) { //cek sampai kursi terakhir
                 penumpang.push(namaPenumpang);
                 return penumpang;
             }
