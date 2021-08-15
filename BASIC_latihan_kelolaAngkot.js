@@ -19,7 +19,6 @@ var tambahPenumpang = function(namaPenumpang, penumpang) {
     if (penumpang.lenght == 0) {
         penumpang.push(namaPenumpang);
         return penumpang;
-        console.log(console.log(penumpang.join(' - ')));
     }else{
         for (var i = 0; i < penumpang.length; i++) {
             if (penumpang[i] == undefined) {
@@ -35,3 +34,20 @@ var tambahPenumpang = function(namaPenumpang, penumpang) {
         }
     }
 };
+
+ //deklarasi fungsi hapus penumpang
+    //jika angkot kosong
+        // tampilkan pesan
+        // kembalikan isi array & keluar dari function
+    // jika ada penumpang yg namanya sesuai
+        // hapus dengan memberi nilai undefined
+        // kembalikan isi array & keluar dari function
+    // jika tidak ada yg namanya sesuai
+        // err msg
+        // kembalikan isi array & keluar dari function
+
+var hapusPenumpang = function (namaPenumpang, penumpang) {
+    if(penumpang.lenght == 0){
+
+    }
+}
