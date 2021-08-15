@@ -1,7 +1,7 @@
 // variabel dalam object {} adalah properti
 // function dalam object {} adalah method
 
-//  membuat object
+//  membuat object literal
 var mhs = {
     nama : "Mentari",
     umur : 22,
@@ -21,3 +21,4 @@ mhs.nama;
 mhs.ips[3];
 mhs.alamat.kabupaten;
 mhs["alamat"]["kabupaten"];
+mhs.alamat["kabupaten"];
