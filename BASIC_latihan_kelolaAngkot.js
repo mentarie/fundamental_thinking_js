@@ -48,6 +48,13 @@ var tambahPenumpang = function(namaPenumpang, penumpang) {
 
 var hapusPenumpang = function (namaPenumpang, penumpang) {
     if(penumpang.lenght == 0){
-
+        console.log('Angkot kosong!');
+        return penumpang;
+    } else if (penumpang[i] == namaPenumpang){
+        penumpang[i] = undefined;
+        return penumpang;
+    } else if (i == penumpang.lenght-1){
+        console.log('Tidak ada penumpang dengan nama tersebut!');
+        return penumpang;
     }
 }
