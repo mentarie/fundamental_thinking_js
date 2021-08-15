@@ -3,7 +3,7 @@
 
 //  membuat object
 var mhs = {
-    nama : "mentari",
+    nama : "Mentari",
     umur : 22,
     ips : [3.7, 3.8, 4.0, 3.8],
     alamat : {
@@ -13,3 +13,11 @@ var mhs = {
         provinsi : "DIY"
     }
 };
+
+// cara manggil di console
+mhs;
+mhs["nama"];
+mhs.nama;
+mhs.ips[3];
+mhs.alamat.kabupaten;
+mhs["alamat"]["kabupaten"];
