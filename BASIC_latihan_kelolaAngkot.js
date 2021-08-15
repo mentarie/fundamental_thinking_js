@@ -47,13 +47,13 @@ var tambahPenumpang = function(namaPenumpang, penumpang) {
         // kembalikan isi array & keluar dari function
 
 var hapusPenumpang = function(namaPenumpang, penumpang) {
-    if (penumpang.lenght == 0){
+    if (penumpang.length == 0){
         console.log('Angkot kosong!');
     } else {
         for (var i = 0; i < penumpang.length; i++) {
             if (penumpang[i] == namaPenumpang){
                 penumpang[i] = undefined;
-            } else if (i == penumpang.lenght-1){
+            } else if (i == penumpang.length-1){
                 console.log('Tidak ada penumpang dengan nama tersebut!');
             }
         }
