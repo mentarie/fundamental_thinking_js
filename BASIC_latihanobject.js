@@ -10,21 +10,20 @@ function Angkot(sopir,trayek,penumpang,kas) {
         if (this.penumpang.length === 0) {
             this.penumpang.push(namaPenumpang);
             return this.penumpang;
-        } else (){
+        } else {
              for (var i = 0; i < this.penumpang.length; i++) {
                 if(this.penumpang[i]==undefined){
                     this.penumpang[i]=namaPenumpang;
                     return this.penumpang;
                 } else if (this.penumpang[i] == namaPenumpang) {
-                     alert('penumpang sudah ada!');
-                     return this.penumpang;
+                    alert('penumpang sudah ada!');
+                    return this.penumpang;
                 } else if (i== this.penumpang.length-1){
                     this.penumpang.push(namaPenumpang);
                     return this.penumpang;
                 }
              }
         }
-        
     }
     this.penumpangTurun = function (namaPenumpang, bayar) {
         //cek
