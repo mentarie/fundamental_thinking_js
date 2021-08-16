@@ -14,6 +14,18 @@ var mhs = {
     }
 };
 
+// membuat object declaration
+function buatObjectMahasiswa(nama,nrp,email,jurusan) {
+    var mhs = {};
+    mhs.nama = nama;
+    mhs.nrp = nrp;
+    mhs.email = email;
+    mhs.jurusan = jurusan;
+    return mhs;
+}
+var mhs2 = buatObjectMahasiswa("Mentari","123456","mentari@mail.com", "Computer Science")
+
+
 // cara manggil di console
 mhs;
 mhs["nama"];
@@ -22,3 +34,5 @@ mhs.ips[3];
 mhs.alamat.kabupaten;
 mhs["alamat"]["kabupaten"];
 mhs.alamat["kabupaten"];
+
+
