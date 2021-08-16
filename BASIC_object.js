@@ -14,7 +14,7 @@ var mhs = {
     }
 };
 
-// membuat object declaration
+// membuat object declaration (ada returnnya)
 function buatObjectMahasiswa(nama,nrp,email,jurusan) {
     var mhs = {};
     mhs.nama = nama;
@@ -25,6 +25,14 @@ function buatObjectMahasiswa(nama,nrp,email,jurusan) {
 }
 var mhs2 = buatObjectMahasiswa("Mentari","123456","mentari@mail.com", "Computer Science")
 
+// membuat object constructor
+function Mahasiswa(nama,nrp,email,jurusan) {
+    this.nama = nama;
+    this.nrp = nrp;
+    this.email = email;
+    this.jurusan = jurusan;
+}
+var mhs3 = new Mahasiswa("Fadhlan", "09876", "fadhlan@mail.com", "Teknologi Informasi");
 
 // cara manggil di console
 mhs;
