@@ -13,6 +13,15 @@ var mhs = {
         provinsi : "DIY"
     }
 };
+// cara manggil di console
+mhs;
+mhs["nama"];
+mhs.nama;
+mhs.ips[3];
+mhs.alamat.kabupaten;
+mhs["alamat"]["kabupaten"];
+mhs.alamat["kabupaten"];
+// ------------------------------------------------------------------------------------------------
 
 // membuat object declaration (ada returnnya)
 function buatObjectMahasiswa(nama,nrp,email,jurusan) {
@@ -24,23 +33,15 @@ function buatObjectMahasiswa(nama,nrp,email,jurusan) {
     return mhs;
 }
 var mhs2 = buatObjectMahasiswa("Mentari","123456","mentari@mail.com", "Computer Science")
+// ------------------------------------------------------------------------------------------------
 
 // membuat object constructor
-function Mahasiswa(nama,nrp,email,jurusan) {
+function Mahasiswa(nama,nrp,email,jurusan) { //biasakan pakai huruf kapital
     this.nama = nama;
     this.nrp = nrp;
     this.email = email;
     this.jurusan = jurusan;
 }
 var mhs3 = new Mahasiswa("Fadhlan", "09876", "fadhlan@mail.com", "Teknologi Informasi");
-
-// cara manggil di console
-mhs;
-mhs["nama"];
-mhs.nama;
-mhs.ips[3];
-mhs.alamat.kabupaten;
-mhs["alamat"]["kabupaten"];
-mhs.alamat["kabupaten"];
 
 
