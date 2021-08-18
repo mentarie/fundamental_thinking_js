@@ -1,7 +1,7 @@
 // variabel dalam object {} adalah properti
 // function dalam object {} adalah method
 
-//  membuat object literal
+//  membuat object literal (variabel berisi object)
 var mhs = {
     nama : "Mentari",
     umur : 22,
@@ -11,6 +11,10 @@ var mhs = {
         kecamatan : "Depok",
         kabupaten : "Sleman",
         provinsi : "DIY"
+    },
+    scoreMapres: 10,
+    akumulasiScore: function (score) { //method
+        this.scoreMapres+=score;
     }
 };
 // cara manggil di console
@@ -24,24 +28,33 @@ mhs.alamat["kabupaten"];
 // ------------------------------------------------------------------------------------------------
 
 // membuat object declaration (ada returnnya)
-function buatObjectMahasiswa(nama,nrp,email,jurusan) {
+function buatObjectMahasiswa(nama,nrp,email,jurusan,scoreMapres) {
     var mhs = {};
     mhs.nama = nama;
     mhs.nrp = nrp;
     mhs.email = email;
     mhs.jurusan = jurusan;
+    mhs.scoreMapres = scoreMapres;
+
+    mhs.akumulasiScore = function (score) { //method
+        this.scoreMapres+=score;
+    }
     return mhs;
 }
-var mhs2 = buatObjectMahasiswa("Mentari","123456","mentari@mail.com", "Computer Science")
+var mhs2 = buatObjectMahasiswa("Mentari","123456","mentari@mail.com", "Computer Science",10)
 // ------------------------------------------------------------------------------------------------
 
 // membuat object constructor
-function Mahasiswa(nama,nrp,email,jurusan) { //biasakan pakai huruf kapital
+function Mahasiswa(nama,nrp,email,jurusan,scoreMapres) { //biasakan pakai huruf kapital
     this.nama = nama;
     this.nrp = nrp;
     this.email = email;
     this.jurusan = jurusan;
+    this.scoreMapres = scoreMapres;
+
+    this.akumulasiScore = function (score) {
+        this.scoreMapres+=score;
+    }
 }
-var mhs3 = new Mahasiswa("Fadhlan", "09876", "fadhlan@mail.com", "Teknologi Informasi");
-
-
+var mhs3 = new Mahasiswa("Fadhlan", "09876", "fadhlan@mail.com", "Teknologi Informasi",10);
+// constructor akan memudahkan kita ketika membuat prototype
