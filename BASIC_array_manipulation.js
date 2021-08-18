@@ -56,12 +56,18 @@
 // })
 
 
-// 9. map (kayak foreach tp mengembalikan/return)
+// 9. map (kayak foreach tp mengembalikan/return) & flatMap
 // var angka = [1,2,3,4,5,6,7,8];
 // var angka2 = angka.map(function (e) {
 //     return e*2;
 // })
-// console.log(angka2.join(' - '));
+// console.log(angka2);
+
+//flatmap
+// var angka3 = angka2.flatMap(x => [x*2]); //hasilnya di array biasa
+// var angka4 = angka2.flatMap(x => [[x*2, "flatMap"]]); //hasilnya bisa dimasukkan dalam subarray
+// console.log(angka3);
+// console.log(angka4);
 
 
 // 10. sort (urutan angka)
@@ -74,7 +80,7 @@
 // console.log(angka2.join(' - '));
 
 
-// 11. Filter
+// 11. filter
 // var angka = [1,3,5,2,6,7,4,9,8];
 // var angkaFilter = angka.filter(function (x){
 //     return x>5; //bisa banyak nilai, menghasilkan array
@@ -82,7 +88,7 @@
 // console.log(angkaFilter.join(' - '));
 
 
-//  12. Find
+//  12. find
 // var angka = [1,3,5,2,6,7,4,9,8];
 // var angkaFind = angka.find(function (x){
 //     return x>5; //cuma 1 nilai
@@ -110,19 +116,16 @@
 // console.log(kucingku.includes("putih"));
 
 
-// 16. indexOf
+// 16. indexOf & lastIndexOf
 // var beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
 // console.log(beasts.indexOf('bison')); //cari index bison pertama
 // console.log(beasts.indexOf('bison',2)); //cari index bison kedua
 // console.log(beasts.indexOf('human')); //ini gaada
-
-
-// 17. lastIndexOf
 // var beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
 // console.log(beasts.lastIndexOf('bison'));//search dari belakang
 
 
-// 18. reduce & reduceRight(dari kanan)
+// 17. reduce & reduceRight(dari kanan)
 // var angka = [1,2,3,4];
 // const reducer = (accumulator, currentValue) => accumulator + currentValue;
 // console.log(angka.reduce(reducer)); //sum semua value dari array
@@ -132,12 +135,34 @@
 // console.log(angka2);
 
 
-// 19. reverse
+// 18. reverse
 // var angka = [1,2,3,4];
 // console.log(angka.reverse()); //reverse biasa
 
 
-// 20. toLocaleString
-var prices = ['￥7', 500, 8123, 12];
-var localPrices = prices.toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' }); //jadi format tertentu
-console.log(localPrices);
+// 19. toLocaleString
+// var prices = ['￥7', 500, 8123, 12];
+// var localPrices = prices.toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' }); //jadi format tertentu
+// console.log(localPrices);
+
+
+// 20. toString
+// var angka = [1,2,3,4];
+// console.log(angka.toString()); //ke string
+
+
+// 21. concat
+// var array1 = ['a', 'b', 'c'];
+// var array2 = ['d', 'e', 'f'];
+// var array3 = array1.concat(array2); //gabungin isi 2 array
+// console.log(array3);
+
+
+// 22. fill
+// var array1 = [1, 2, 3, 4];
+// console.log(array1.fill(0, 2, 4)); //value, mulai, selesai. index 2-4 isinya '0'
+
+
+// 23. flat
+// var arr2 = [0, 1, 2, [[[3, 4]]]];
+// console.log(arr2.flat(3)); //kayak reduce tapi bisa diatur kedalaman arraynya
