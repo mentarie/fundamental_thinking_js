@@ -35,8 +35,8 @@
 
 // 6. unshift & shift (awal array)
 // var arr = ["mentari", "enggar", "rizki"];
-// arr.unshift('mentari');
-// arr.shift();
+// arr.unshift('mentari');//nambahin
+// arr.shift(); //ngehapus
 // console.log(arr.join(' - '));
 
 
@@ -108,3 +108,36 @@
 // var kucingku = ["lucas", "syaiful", "blirik", "icam"];
 // console.log(kucingku.includes("lucas")); // nyari, hasilnya t/f
 // console.log(kucingku.includes("putih"));
+
+
+// 16. indexOf
+// var beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+// console.log(beasts.indexOf('bison')); //cari index bison pertama
+// console.log(beasts.indexOf('bison',2)); //cari index bison kedua
+// console.log(beasts.indexOf('human')); //ini gaada
+
+
+// 17. lastIndexOf
+// var beasts = ['ant', 'bison', 'camel', 'duck', 'bison'];
+// console.log(beasts.lastIndexOf('bison'));//search dari belakang
+
+
+// 18. reduce & reduceRight(dari kanan)
+// var angka = [1,2,3,4];
+// const reducer = (accumulator, currentValue) => accumulator + currentValue;
+// console.log(angka.reduce(reducer)); //sum semua value dari array
+// var angka2 = [[1,2],[5,6]].reduce(
+//     (accumulator, currentValue) => accumulator.concat(currentValue)
+// );
+// console.log(angka2);
+
+
+// 19. reverse
+// var angka = [1,2,3,4];
+// console.log(angka.reverse()); //reverse biasa
+
+
+// 20. toLocaleString
+var prices = ['￥7', 500, 8123, 12];
+var localPrices = prices.toLocaleString('ja-JP', { style: 'currency', currency: 'JPY' }); //jadi format tertentu
+console.log(localPrices);
