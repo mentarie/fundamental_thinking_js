@@ -98,4 +98,13 @@
 // console.log(angkaFindIndex);
 
 
-// 14.  
+// 14. from
+// var nama; 
+// nama = Array.from("mentari er"); //memisah karakter kemudian jadiin array
+// console.log(nama);
+
+
+// 15. includes
+// var kucingku = ["lucas", "syaiful", "blirik", "icam"];
+// console.log(kucingku.includes("lucas")); // nyari, hasilnya t/f
+// console.log(kucingku.includes("putih"));
