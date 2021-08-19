@@ -30,3 +30,8 @@ function Mahasiswa(nama,energi) {
 }
 
 var mhs1 = Mahasiswa("mentari",10);
+
+
+// notes: tapi dalam praktek ini, kita masih belum efektif sebenernya
+// kita pakai object Mahasiswa terus bikin object lain untuk mendukung pakai methodMahasiswa
+// biar ga perlu bikin pakai: "PROTOTYPE"
