@@ -1,7 +1,7 @@
 // variabel dalam object {} adalah properti
 // function dalam object {} adalah method
 
-//  membuat object literal (variabel berisi object)
+//  membuat object literal (variabel berisi object) -------------------------------------------------
 var mhs = {
     nama : "Mentari",
     umur : 22,
@@ -25,9 +25,10 @@ mhs.ips[3];
 mhs.alamat.kabupaten;
 mhs["alamat"]["kabupaten"];
 mhs.alamat["kabupaten"];
+// notes: tidak efektif untuk object yg banyak, ada duplikasi
 // ------------------------------------------------------------------------------------------------
 
-// membuat object declaration (ada returnnya)
+// membuat object declaration (ada returnnya)------------------------------------------------------
 function buatObjectMahasiswa(nama,nrp,email,jurusan,scoreMapres) {
     var mhs = {};
     mhs.nama = nama;
@@ -42,9 +43,10 @@ function buatObjectMahasiswa(nama,nrp,email,jurusan,scoreMapres) {
     return mhs;
 }
 var mhs2 = buatObjectMahasiswa("Mentari","123456","mentari@mail.com", "Computer Science",10)
+//notes: ketika create object, method di dalamnya tetap dibuat jadi akan memakan memori
 // ------------------------------------------------------------------------------------------------
 
-// membuat object constructor
+// membuat object constructor ---------------------------------------------------------------------
 function Mahasiswa(nama,nrp,email,jurusan,scoreMapres) { //biasakan pakai huruf kapital
     this.nama = nama;
     this.nrp = nrp;
@@ -52,7 +54,7 @@ function Mahasiswa(nama,nrp,email,jurusan,scoreMapres) { //biasakan pakai huruf 
     this.jurusan = jurusan;
     this.scoreMapres = scoreMapres;
 
-    this.akumulasiScore = function (score) {
+    this.akumulasiScore = function (score) { //method
         this.scoreMapres+=score;
     }
 }

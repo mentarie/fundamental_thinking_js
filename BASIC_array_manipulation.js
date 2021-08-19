@@ -62,8 +62,7 @@
 //     return e*2;
 // })
 // console.log(angka2);
-
-//flatmap
+//flatmap ----------------------------------------------------
 // var angka3 = angka2.flatMap(x => [x*2]); //hasilnya di array biasa
 // var angka4 = angka2.flatMap(x => [[x*2, "flatMap"]]); //hasilnya bisa dimasukkan dalam subarray
 // console.log(angka3);
