@@ -43,7 +43,7 @@ function buatObjectMahasiswa(nama,nrp,email,jurusan,scoreMapres) {
     return mhs;
 }
 var mhs2 = buatObjectMahasiswa("Mentari","123456","mentari@mail.com", "Computer Science",10)
-//notes: ketika create object, method di dalamnya tetap dibuat jadi akan memakan memori
+//notes: ketika create object, method di dalamnya tetap dibuat jadi akan memakan memori karena dibuat ulang
 // ------------------------------------------------------------------------------------------------
 
 // membuat object constructor ---------------------------------------------------------------------
