@@ -22,7 +22,7 @@ var methodMahasiswa = {
 
 // buat fungsi mahasiswa (object.create) kek inheritance
 function Mahasiswa(nama,energi) {
-    var mahasiswa = Object.create(methodMahasiswa);
+    var mahasiswa = Object.create(methodMahasiswa); //manggil kelas lain sebagai parent
     mahasiswa.nama = nama;
     mahasiswa.energi = energi;
     
