@@ -165,3 +165,8 @@
 // 23. flat
 // var arr2 = [0, 1, 2, [[[3, 4]]]];
 // console.log(arr2.flat(3)); //kayak reduce tapi bisa diatur kedalaman arraynya
+
+
+// notes ---------------------------------------------------------------
+// Darimana sih asal method2 di atas? 
+// Jawaban : Mereka merupakan prototype dari object array
