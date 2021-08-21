@@ -38,7 +38,7 @@
 //     return instagramURL + username; 
 // }
 // console.log(cetakURL(username));
-// console.log(cetakURL('fadhlanhawali')); //daripada variabel yg dideclare,ini lebih diprioritaskan karena argumen yg dibawa langsung ke function
+// console.log(cetakURL('fadhlanhawali')); //daripada variabel yg global,ini lebih diprioritaskan karena argumen yg dibawa langsung ke function + jka functionnya pakai param ya
 
 
 // Kuis
@@ -47,8 +47,9 @@ function satu() {
     console.log(nama);
 }
 function dua() {
-    console.log(nama);
+    console.log(nama); //lokal var ada ga? di argumen ada ga? oh ke global
 }
+
 console.log(nama);
 var nama = "enggar";
 satu();
