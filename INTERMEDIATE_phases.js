@@ -31,9 +31,11 @@
 
 
 // Example
-var username = "mentari.er";
-function cetakURL(username) {
-    var instagramURL = "https://instagram.com/";
-    return instagramURL + username;
-}
-console.log(cetakURL(username));
+// var username = "mentari.er";
+// function cetakURL(username) { // jika tida ada argumen username, makan return akan mencari variabel terdekat (lokal) baru global
+//     // console.log(arguments); // meski function gaditulis paramsnya, tapi jika pas dipanggil dikasi argumen, tetep argumen akan kebaca kok
+//     var instagramURL = "https://instagram.com/";
+//     return instagramURL + username; 
+// }
+// console.log(cetakURL(username));
+// console.log(cetakURL('fadhlanhawali')); //daripada variabel yg dideclare,ini lebih diprioritaskan karena argumen yg dibawa langsung ke function
