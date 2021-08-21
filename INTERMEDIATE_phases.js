@@ -39,3 +39,18 @@
 // }
 // console.log(cetakURL(username));
 // console.log(cetakURL('fadhlanhawali')); //daripada variabel yg dideclare,ini lebih diprioritaskan karena argumen yg dibawa langsung ke function
+
+
+// Kuis
+function satu() {
+    var nama = "mentari";
+    console.log(nama);
+}
+function dua() {
+    console.log(nama);
+}
+console.log(nama);
+var nama = "enggar";
+satu();
+dua('rizki');
+console.log(nama);
