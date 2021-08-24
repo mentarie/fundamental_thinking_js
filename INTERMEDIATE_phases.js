@@ -47,7 +47,7 @@ function satu() {
     console.log(nama);
 }
 function dua() {
-    console.log(nama); //lokal var ada ga? di argumen ada ga? oh ke global
+    console.log(nama); //lokal var ada ga? di argumen ada ga? oh ke global (ini hoisting)
 }
 
 console.log(nama);
