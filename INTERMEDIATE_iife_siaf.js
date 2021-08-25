@@ -28,5 +28,5 @@ console.log(i);
 
 
 // Kesimpulan :
-// "let" & "const" --> block scopes
+// "let" & "const" (konstanta, meminimalisir perubahan state) --> block scopes
 // "var" --> function scopes
