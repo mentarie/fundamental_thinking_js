@@ -23,3 +23,6 @@ console.log(tampilPesan5('Mentari', 'Pagi'));
 
 // SOAL
 // Cari length dari tiap nama menggunakan arrow function
+let mahasiswa = ["mentari", "enggar", "rizki"];
+let jumlahHuruf = mahasiswa.map(nama => nama.length);
+console.log(jumlahHuruf);
