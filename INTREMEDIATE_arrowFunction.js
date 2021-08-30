@@ -41,5 +41,5 @@ console.table(jumlahHuruf2);
 
 
 
-// 
+//  
 
