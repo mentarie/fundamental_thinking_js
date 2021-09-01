@@ -41,5 +41,5 @@ console.table(jumlahHuruf2);
 
 
 
-//  Kembalikan 
+//  Kembalikan nilai dalam bentuk array
 
