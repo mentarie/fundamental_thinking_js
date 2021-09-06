@@ -40,5 +40,4 @@ console.log(jumlahHuruf2);
 console.table(jumlahHuruf2);
 
 
-
 //  Kembalikan nilai dalam bentuk array
