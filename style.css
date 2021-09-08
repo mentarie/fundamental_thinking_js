@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .box{
     width: 100px;
     height: 100px;
@@ -7,4 +12,15 @@
                 .3s height .3s,
                 .3s margin-top .3s,
                 ls background-color;
+}
+
+/* buat ubah lebar */
+.size{
+    width: 150px;
+    height: 150px;
+    margin-top: 25px;
+}
+
+.caption {
+    background-color: black;
 }
