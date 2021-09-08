@@ -37,7 +37,7 @@ let mahasiswa = ["mentari", "enggar", "rizki"];
 // Kembalikan hasil dalam bentuk object, bukan array
 let jumlahHuruf2 = mahasiswa.map(nama => ({nama:nama, jumlahHuruf2:nama.length}));
 console.log(jumlahHuruf2);
-console.table(jumlahHuruf2);
+console.table(jumlahHuruf2); //bentuknya tabel
 
 
 //  Kembalikan nilai dalam bentuk array
