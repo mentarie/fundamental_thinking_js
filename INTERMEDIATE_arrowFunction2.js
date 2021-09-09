@@ -17,7 +17,7 @@
 // Jawaban
 const box = document.querySelector('.box'); //nyari class box di html
 box.addEventListener('click', function () {
-    //untuk merubah alur perubahan yaitu ubah size->wana bg jadi warna bg ilang->size
+    //untuk merubah alur perubahan yaitu ubah size->wana bg jadi warna bg ilang->size 
     let satu = 'size';
     let dua = 'caption';
     if (this.classList.contains(satu)) {
