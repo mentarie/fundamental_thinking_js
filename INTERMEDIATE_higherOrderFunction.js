@@ -8,3 +8,16 @@
 // Karena function di JS = object, berati mirip kayak string, int, dll
 // Maka function bisa kita simapan juga sebagai argumen/return value dari function yg lain
 // *kayak closure
+
+
+// Buat contoh HOF sederhana!
+function beliSayur(namaSayur, status) {
+    alert(`Saya membeli ${namaSayur}`);
+    status();
+}
+
+function statusPembelian() {
+    alert('Selesai membeli sayur!');
+}
+
+beliSayur('Bayam', statusPembelian);
