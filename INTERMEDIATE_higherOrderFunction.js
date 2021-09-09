@@ -11,7 +11,7 @@
 
 
 // Buat contoh HOF sederhana!
-function beliSayur(namaSayur, status) {
+function beliSayur(namaSayur, status) { //parameter status adalah callback, beliSayur adalah HOP
     alert(`Saya membeli ${namaSayur}`);
     status();
 }
