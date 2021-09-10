@@ -11,6 +11,10 @@
 // Function yg jadi argumen = callback
 // Function yg punya callback = HOP
 
+// Kenapa pakai HOP? Semakin besar program+kompleksitasnya, semakin membingungkan
+// Jadi butuh disederhanakan
+
+
 
 // CONTOH 1
 function beliSayur(namaSayur, status) { //parameter status adalah callback, beliSayur adalah HOP
@@ -25,23 +29,41 @@ function statusPembelian() {
 beliSayur('Bayam', statusPembelian);
 
 
+
+
 // CONTOH 2
 setTimeout(function () {
     console.log('Hello World');
 }, 1000); // parameter pertama adalah function, params kedua adalah integer
 
 
+
+
+
 // CONTOH 3
-const tombol = document.querySelector('.submit');
-tombol.addEventListener('click', function () { //parameternya function
-    console.log('tombol ditekan');
-});
+// const tombol = document.querySelector('.submit');
+// tombol.addEventListener('click', function () { //parameternya function
+//     console.log('tombol ditekan');
+// });
+
+
+
 
 // CONTOH 4
- function ucapkanSalam(waktu) {
+ function ucapkanSalam(waktu) { //return valuenya function
     return function (nama) {
         console.log(`Halo ${nama}, Selamat ${waktu}`);
     }
  }
 let selamatMalam = ucapkanSalam('Malam');
 selamatMalam('Mentari');
+
+
+
+// CONTOH 5
+function repeat(num, action) {
+    for (let i = 0; i < num; i++) {
+        action(i);
+    }
+}
+repeat(10,console.log); //kita bisa mindahin actionnya sebagai parameter
