@@ -36,3 +36,12 @@ const tombol = document.querySelector('.submit');
 tombol.addEventListener('click', function () { //parameternya function
     console.log('tombol ditekan');
 });
+
+// CONTOH 4
+ function ucapkanSalam(waktu) {
+    return function (nama) {
+        console.log(`Halo ${nama}, Selamat ${waktu}`);
+    }
+ }
+let selamatMalam = ucapkanSalam('Malam');
+selamatMalam('Mentari');
