@@ -7,10 +7,12 @@
 // JS memperlakukan function sebagai object
 // Karena function di JS = object, berati mirip kayak string, int, dll
 // Maka function bisa kita simapan juga sebagai argumen/return value dari function yg lain
-// *kayak closure
+
+// Function yg jadi argumen = callback
+// Function yg punya callback = HOP
 
 
-// Buat contoh HOF sederhana!
+// CONTOH 1
 function beliSayur(namaSayur, status) { //parameter status adalah callback, beliSayur adalah HOP
     alert(`Saya membeli ${namaSayur}`);
     status();
@@ -21,3 +23,16 @@ function statusPembelian() {
 }
 
 beliSayur('Bayam', statusPembelian);
+
+
+// CONTOH 2
+setTimeout(function () {
+    console.log('Hello World');
+}, 1000); // parameter pertama adalah function, params kedua adalah integer
+
+
+// CONTOH 3
+const tombol = document.querySelector('.submit');
+tombol.addEventListener('click', function () { //parameternya function
+    console.log('tombol ditekan');
+});
