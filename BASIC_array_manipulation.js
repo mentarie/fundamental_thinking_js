@@ -167,6 +167,11 @@
 // console.log(arr2.flat(3)); //kayak reduce tapi bisa diatur kedalaman arraynya
 
 
+// 24. split
+// var waktu = ['10:30'];
+// const parts = waktu.split(':');
+
+
 // notes ---------------------------------------------------------------
 // Darimana sih asal method2 di atas? 
 // Jawaban : Mereka merupakan prototype dari object array
