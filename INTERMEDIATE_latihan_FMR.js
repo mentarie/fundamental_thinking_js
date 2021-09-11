@@ -10,8 +10,9 @@
 // const videos = document.querySelectorAll('[data-duration]');
 // --> kalau masih nodelist, jadiin array dulu
 
+//durasi
 const videos = Array.from(document.querySelectorAll('[data-duration]'));
-const filteredVideo = videos.filter(video => video.textContent.includes('JAVASCRIPT LANJUTAN'))
+let filteredVideo = videos.filter(video => video.textContent.includes('JAVASCRIPT LANJUTAN'))
     .map(item => item.dataset.duration) //kita ambil data-duration
     .map(waktu => {
         const parts = waktu.split(':').map(part => parseFloat(part)); //kita pisah menit dan detiknya lalu ubah ke float
@@ -19,7 +20,15 @@ const filteredVideo = videos.filter(video => video.textContent.includes('JAVASCR
     })
     .reduce((total,detik) => total+detik);
 
-const jam = filteredVideo/3600;
+const jam = Math.floor(filteredVideo/3600);
+filteredVideo = filteredVideo - jam * 3600;
+const menit = Math.floor(filteredVideo/60);
+const detik = filteredVideo - menit *60;
 
+const pDurasi = document.querySelector('.total-durasi');
+pDurasi.textContent = `${jam} jam, ${menit} menit, ${detik} detik.`;
 
-console.log(filteredVideo);
+//jumlah video
+const jmlVideo = videos.filter(video => video.textContent.includes('JAVASCRIPT LANJUTAN')).length;
+const pJmlVideo = document.querySelector('.jumlah-video');
+pJmlVideo.textContent = `${jmlVideo} video`;
