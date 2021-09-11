@@ -42,7 +42,20 @@ const angka = [-1,8,9,1,4,-5,-4,3,2,9];
 
 
 
-// 3. Menjumlahkan semua angka dalam array
+// 3. Menjumlahkan semua angka dalam array -------------------------
 // Reduce
-const newAngka3 = angka.reduce((accumulator, currentValue) => accumulator + currentValue);
-console.log(newAngka3);
+// const newAngka3 = angka.reduce((accumulator, currentValue) => 
+//    accumulator + currentValue, 0
+// ); //0 adalah default nilai awal, bisa diubah
+// console.log(newAngka3);
+// -----------------------------------------------------------------
+
+
+
+
+// 4. Method Chaining
+// Cari angka lebih dari 5, lalu kalikan 3, terus jumlah!
+const hasil = angka.filter(num => num > 5)
+   .map(num => num*3)
+   .reduce((accumulator,currentValue) => accumulator+currentValue);
+console.log(hasil);
