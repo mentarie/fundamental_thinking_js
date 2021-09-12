@@ -54,3 +54,33 @@ const el3 = `<div class="lagu">
     </ol>`).join('')}
 </div>`;
 document.body.innerHTML = el3;
+
+
+// 4. HTML Bersarang
+const matkul = {
+    jurusan: 'Ilmu Komputer',
+    semester: 5,
+    mataKuliah: [
+        'Rekayasa Web',
+        'Analisis dan Perancangan Sistem Informasi',
+        'Business Intelligence',
+        'Statistika'
+    ]
+};
+
+function cetakMataKuliah(allMataKuliah) {
+    return `
+        <ol>
+            ${allMataKuliah.map(m => `<li>${m}</li>`).join('')}
+        </ol>
+    `;
+}
+
+const el4 = `<div class="matkul">
+    <h2>${matkul.jurusan}</h2>
+    <span>Semester: ${matkul.semester}</span>
+    <h4>Mata Kuliah</h4>
+    ${cetakMataKuliah(matkul.mataKuliah)}
+</div>`;
+
+document.body.innerHTML = el4;
