@@ -40,3 +40,4 @@ const el = `<div class="mhs">
     <span class="nrp">${mhs.nrp}</span>
 </div>`;
 console.log(el);
+document.body.innerHTML = el;
