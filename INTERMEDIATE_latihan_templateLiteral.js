@@ -33,3 +33,24 @@ const el2 = `<div class="siswa">
     </ul>`).join('')}
 </div>`;
 document.body.innerHTML = el2;
+
+
+// 3. Conditional
+const lagu = [ 
+    {
+        judul : 'Tetap Dalam Jiwa',
+        penyanyi: 'Isyana Saraswati',
+    },
+    {
+        judul : 'Kau Adalah',
+        penyanyi: 'Isyana Saraswati',
+        feat: 'Rayi Putra'
+    }
+];
+const el3 = `<div class="lagu">
+    ${lagu.map(m => `<ol>
+        <li>Judul: ${m.judul}</li>
+        <li>Penyanyi: ${m.penyanyi} ${(m.feat)? `(feat. ${m.feat})` : ''}</li>
+    </ol>`).join('')}
+</div>`;
+document.body.innerHTML = el3;
