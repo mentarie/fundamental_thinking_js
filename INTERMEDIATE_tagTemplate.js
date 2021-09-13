@@ -26,3 +26,16 @@ function coba3(strings, ...values) { //... akan menjadi sebuah erray tg isinya s
 }
 const str3 = coba3 `Halo, nama saya ${nama}, saya ${usia} tahun.`;
 console.log(str3);
+
+
+
+// 4. Pengabungan
+function coba4(strings, ...values) {
+    let result = '';
+    strings.forEach((str,i) => {
+        result += `${str}${values[i] || ''}`;
+    });
+    return result;
+}
+const str4 = coba4 `Halo, nama saya ${nama}, saya ${usia} tahun.`;
+console.log(str4);
