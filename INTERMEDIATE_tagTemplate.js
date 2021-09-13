@@ -45,3 +45,13 @@ function coba4(strings, ...values) {
 }
 const str4 = coba4 `Halo, nama saya ${nama}, saya ${usia} tahun.`;
 console.log(str4);
+
+
+
+// 5. Highlight (Sangat berguna di fitur pencarian)
+function highlght(strings, ...values) {
+    return strings.reduce((result, str, i) => `${result}${str}<span class="hl">${values[i] || ''}</span>`,'');
+}
+const strHighlight = highlght `Halo, nama saya ${nama}, saya ${usia} tahun.`;
+
+document.body.innerHTML = strHighlight;
