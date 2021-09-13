@@ -1,4 +1,9 @@
 // Tagged Tempolate
+// Untuk sanitize HTML tags
+// Untuk internasionalization web kita
+// Untuk styling component
+
+
 const nama = 'Mentari';
 const usia = 22;
 
@@ -52,6 +57,6 @@ console.log(str4);
 function highlght(strings, ...values) {
     return strings.reduce((result, str, i) => `${result}${str}<span class="hl">${values[i] || ''}</span>`,'');
 }
-const strHighlight = highlght `Halo, nama saya ${nama}, saya ${usia} tahun.`;
+const strHighlight = highlght `Halo, nama saya ${nama}, saya ${usia} tahun.`; //stringnya dilewatkan dulu ke dalam function
 
 document.body.innerHTML = strHighlight;
