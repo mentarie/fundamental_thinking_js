@@ -51,9 +51,29 @@
 
 
 // Destructuring OBJECT **************************************************************************************
+// 1. Destructuring dengan deklarasi object
+// const mhs = {
+//     nama: 'Mentari',
+//     usia: 22
+// };
+// const {nama,usia} = mhs; //variabel harus sama dengan properti di function mhs
+// console.log(nama);
+
+// 2. Destructuring object
+// const {nama,usia} = {
+//     nama: 'Mentari',
+//     usia: 22
+// };
+// console.log(nama);
+
+// 3. Assignment tanpa deklarasi object
+// ({nama,usia} = { nama: 'Mentari',  usia: 22 });
+// console.log(nama);
+
+// 4. Assign ke variabel baru
 const mhs = {
     nama: 'Mentari',
     usia: 22
 };
-const {nama,usia} = mhs; //variabel harus sama dengan properti di function mhs
-console.log(nama);
+const { nama: a, usia: b } = mhs;
+console.log(b);
