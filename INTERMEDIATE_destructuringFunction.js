@@ -25,3 +25,16 @@
 
 
 // Destructuring function argumen (bukan return value)
+const mhs1 = {
+    nama: 'Mentari ER',
+    umur: 22,
+    email: 'mentari@gmail.com'
+}
+function cetakMhs(mhs) {
+    return `1: Halo nama saya ${mhs.nama}, saya berumur ${mhs.umur} tahun`; //dipecahnya disini
+}
+function cetakMhs2({nama,umur}) { //dipecah disini
+    return `2: Halo nama saya ${nama}, saya berumur ${umur} tahun`; //dipecahnya disini
+}
+console.log(cetakMhs(mhs1));
+console.log(cetakMhs2(mhs1));
