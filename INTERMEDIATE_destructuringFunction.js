@@ -25,16 +25,26 @@
 
 
 // Destructuring function argumen (bukan return value)
+//Bagus jika objectnya kompleks
 const mhs1 = {
     nama: 'Mentari ER',
     umur: 22,
-    email: 'mentari@gmail.com'
+    email: 'mentari@gmail.com',
+    nilai: {
+        tugas: 50,
+        uts: 79,
+        uas: 90
+    }
 }
 function cetakMhs(mhs) {
     return `1: Halo nama saya ${mhs.nama}, saya berumur ${mhs.umur} tahun`; //dipecahnya disini
 }
 function cetakMhs2({nama,umur}) { //dipecah disini
-    return `2: Halo nama saya ${nama}, saya berumur ${umur} tahun`; //dipecahnya disini
+    return `2: Halo nama saya ${nama}, saya berumur ${umur} tahun`;
+}
+function cetakMhs3({nama,umur, nilai: {tugas, uts, uas}}) {
+    return `3: Halo nama saya ${nama}, saya berumur ${umur} tahun. Nilai tugas saya: ${tugas}, nilai uts: ${uts}, dan nilai uas: ${uas}.`;
 }
 console.log(cetakMhs(mhs1));
 console.log(cetakMhs2(mhs1));
+console.log(cetakMhs3(mhs1));
