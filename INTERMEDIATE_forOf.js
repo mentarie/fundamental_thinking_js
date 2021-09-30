@@ -1,5 +1,5 @@
 //for .. of
-// Membuat looping dari iterable object:
+// Membuat looping dari iterables object:
 // 1. String
 // 2. Array
 // 3. Arguments/NodeList (query pada variabel)
