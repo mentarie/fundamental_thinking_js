@@ -1,7 +1,3 @@
-.hl{
-    background-color: salmon;
-}
-
 .box{
     width: 100px;
     height: 100px;
@@ -23,3 +19,24 @@
 .caption {
     background-color: black;
 }
+
+
+/* <!-- kode di bawah punya spread operator --> */
+body{
+    background-color: white;
+    text-align: center;
+}
+.namaMhs{
+    font-family: Arial;
+    font-size: 80px;
+    color: white;
+}
+.namaMhs span{
+    display: inline-block;
+    transition: .3s;
+    cursor: pointer;
+}
+.namaMhs span:hover{
+    transform: scale(2) translateY(-20px);
+}
+/* <!-- kode di atas punya spread operator --> */

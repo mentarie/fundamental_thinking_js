@@ -59,7 +59,7 @@ console.log(li_mahasiswa1);
 
 // SOAL 4 --------------------------------------------------------------
 // Dengan H1 yang ada di html, buat jika tiap huruf di hover, huruf membesar
-const namaMhs = document.querySelector('.nama');
+const namaMhs = document.querySelector('.namaMhs');
 const huruf = [...namaMhs.textContent].map(m=> `<span>${m}</span>`).join('');
 nama.innerHTML = huruf; //nempelin ke html yg kelasnya .nama
 console.log(huruf); //lihat hasil span
