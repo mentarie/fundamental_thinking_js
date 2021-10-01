@@ -52,3 +52,15 @@ const li_mahasiswa = document.querySelectorAll('li');
 const li_mahasiswa1 = [...li_mahasiswa].map(m => m.textContent); //nodelist kita sprad ke dalam array dulu
 console.log(li_mahasiswa1);
 // ---------------------------------------------------------------------
+
+
+
+
+
+// SOAL 4 --------------------------------------------------------------
+// Dengan H1 yang ada di html, buat jika tiap huruf di hover, huruf membesar
+const namaMhs = document.querySelector('.nama');
+const huruf = [...namaMhs.textContent].map(m=> `<span>${m}</span>`).join('');
+nama.innerHTML = huruf; //nempelin ke html yg kelasnya .nama
+console.log(huruf); //lihat hasil span
+// ---------------------------------------------------------------------
