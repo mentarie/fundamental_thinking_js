@@ -35,7 +35,7 @@ console.log(`Ketua adalah ${ketua}, wakilnya ${wakil}, dan anggotanya ${anggota}
 
 
 // SOAL 4 -----------------------------------------------------------------------
-// Dengan object destructuring, pisahkan antara PM dengan sisa kelompoknya
+// Dengan object destructuring, pisahkan antara PM dari sisa kelompoknya
 const team = {
     pm: 'Sandhika',
     fe: 'Muhshin',
@@ -46,4 +46,15 @@ const team = {
 const {pm, ...myTeam} = team;
 console.log(`Pm: ${pm}`);
 console.log(myTeam);
+// ------------------------------------------------------------------------------
+
+
+
+
+// SOAL 5 -----------------------------------------------------------------------
+// Pisahkan nilai yang dikirimkan berdasarkan tipe data
+function filterBy(type, ...values) {
+    return values.filter(v => typeof v === type);
+}
+console.log(filterBy('string', 1,2, 'Sandhika', false, 10, true, 'Ai')); //kata kuncinya ada di 'string'
 // ------------------------------------------------------------------------------
