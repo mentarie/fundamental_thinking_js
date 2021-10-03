@@ -7,5 +7,6 @@
 
 // Konsep heap & stack -------------------------------
 // Heap: tempat alokasi memori, hoisting
-// Stack: Function call & eksekusi context
+// Stack: tempat function call & eksekusi context
 // ---------------------------------------------------
+
