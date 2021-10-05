@@ -21,3 +21,6 @@
 
 // Mau coba que --------------------------------------
 // https://latentflip.com
+
+
+// DON'T BLOCK THE EVENT LOOP!
