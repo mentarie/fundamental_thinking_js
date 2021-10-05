@@ -18,3 +18,6 @@
 // 3. setTimeout
 // 4. setInterval
 // 5. Callback Queue --> onclick, onLoad, $.get, delay
+
+// Mau coba que --------------------------------------
+// https://latentflip.com
