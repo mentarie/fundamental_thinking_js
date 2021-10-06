@@ -1,0 +1,23 @@
+[
+    {
+        "nama"      : "Mentari",
+        "nim"       : "15113",
+        "email"     : "mentari@mail.com",
+        "jurusan"   : "Computer Science",
+        "idDPA"     : 1
+    },
+    {
+        "nama"      : "Fadhlan",
+        "nim"       : "15114",
+        "email"     : "fadhlan@mail.com",
+        "jurusan"   : "Computer Science",
+        "idDPA"     : 1
+    },
+    {
+        "nama"      : "Hawali",
+        "nim"       : "15115",
+        "email"     : "hawali@mail.com",
+        "jurusan"   : "Computer Science",
+        "idDPA"     : 1
+    }
+]

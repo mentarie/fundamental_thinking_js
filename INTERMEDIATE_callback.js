@@ -20,3 +20,31 @@ tampilkanPesan(halo); //parameternya function halo. gapakai () karena nungggu di
 // Asynchronous Callback ----------------------------------------------------------------------------
 // Kita punya array berwujud object. Saya mau menampilkan data mereka ke dalam console.
 // Berikan pula pesan callback apabila error maupun success.
+// data mahasiswa ada di 'data\INTERMEDIATE_callback_mahasiswa.json'
+
+
+
+function getDataMahasiswa(url, success, error) {
+    let xhr =  new XMLHttpRequest(); //bikin object ajax baru
+
+    xhr.onreadystatechange = function () { //ketika state sudah siap, function ngecek:
+        if (xhr.readyState === 4) { //ngecek scr asinkron, 4 = state terakhir ketika dah siap
+            if (xhr.status === 200) { //200=ok
+                success(xhr.response); //responsenya dibungkus dalam function callback
+            }else if (xhr.status === 404) { //404=page not found
+                error();
+            }
+        }
+    }
+
+    xhr.open('get', url); //methodnya apa, urlnya apa
+    xhr.send(); //kita kirim
+}
+
+getDataMahasiswa('data/INTERMEDIATE_callback_mahasiswa.json', results => {
+    console.log(results); //hasilnya akan array, belum object
+    console.log(JSON.parse(results)); //hasilnya jadi object
+}, () => {
+
+});
+//struktur di atas sebenernya: getDataMahasiswa(url, func success, func error)
