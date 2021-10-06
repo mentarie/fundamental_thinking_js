@@ -9,6 +9,11 @@ $.ajax({
     url: 'data/INTERMEDIATE_callback_mahasiswa.json',
     success : (mhs) => { //gausa diparsing karena dah object
         console.log(mhs);
+
+        // manggil properti tertentu
+        mhs.forEach(m => {
+            console.log(m.nama);
+        });
     },
     error: () => {}
 });
