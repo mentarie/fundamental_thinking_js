@@ -15,6 +15,8 @@ $.ajax({
             console.log(m.nama);
         });
     },
-    error: () => {}
+    error: (e) => {
+        console.log(e.responseText);
+    }
 });
 console.log('selesai');

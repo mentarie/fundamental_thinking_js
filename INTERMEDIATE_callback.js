@@ -20,7 +20,8 @@ tampilkanPesan(halo); //parameternya function halo. gapakai () karena nungggu di
 // Asynchronous Callback ----------------------------------------------------------------------------
 // Kita punya array berwujud object. Saya mau menampilkan data mereka ke dalam console.
 // Berikan pula pesan callback apabila error maupun success.
-// data mahasiswa ada di 'data/INTERMEDIATE_callback_mahasiswa.json'
+// Gunakan vanilla js (biasa)
+// Data mahasiswa ada di 'data/INTERMEDIATE_callback_mahasiswa.json'
 
 
 function getDataMahasiswa(url, success, error) {
@@ -42,7 +43,8 @@ function getDataMahasiswa(url, success, error) {
 
 
 // console.log("mulai"); ---------------------------------------------------------------------------------------------------
-getDataMahasiswa('data/INTERMEDIATE_callback_mahasiswa.json', results => { //kalau error coba nyalain live server
+getDataMahasiswa('data/INTERMEDIATE_callback_mahasiswa.json', 
+results => { //kalau error coba nyalain live server
     console.log(results); //hasilnya akan array, belum object
     console.log(JSON.parse(results)); //hasilnya jadi object
     
@@ -52,8 +54,8 @@ getDataMahasiswa('data/INTERMEDIATE_callback_mahasiswa.json', results => { //kal
         console.log(m.nama);
     });
     
-}, () => {
-    
+}, (e) => {
+    console.log(e.responseText);
 });
 //struktur di atas sebenernya: getDataMahasiswa(url, func success, func error)
 // console.log("selesai"); ---------------------------------------------------------------------------------------------------
