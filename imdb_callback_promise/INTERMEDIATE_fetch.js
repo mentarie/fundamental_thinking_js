@@ -19,6 +19,21 @@ searchButton.addEventListener('click', function () { //"ketika tombolnya di klik
             // Masukkan cards ke dalam container
             const movieContainer = document.querySelector('.movie-container');
             movieContainer.innerHTML = cards;
+            // Ketika tombil detail di-klik
+            const modalDetailButton = document.querySelectorAll('.modal-detail-button');
+            modalDetailButton.forEach(btn => { //"kenapa di-foreach?" karena modalDetailButton bentuknya nodelist
+                btn.addEventListener('click', function () {//"kenapa disini pakai func?" karena kita butuh this
+                    // console.log(this); //cek idnya + this jalan apa engga
+                    const imdbid = this.dataset.imdbid; //langsung ambil imdbid
+                    fetch('http://www.omdbapi.com/?apikey=68aec5a&i=' + imdbid)
+                        .then(response => response.json())
+                        .then(m => {
+                            const movieDetail = showMovieDetails(m);
+                            const modalBody = document.querySelector('.modal-body');
+                            modalBody.innerHTML = movieDetail;
+                        });
+                })
+            });
         });
 });
 
