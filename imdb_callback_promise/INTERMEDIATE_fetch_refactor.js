@@ -1,37 +1,50 @@
 // FETCH REFACTOR
 
-const searchButton = document.querySelector('.search-button'); //"js carikan saya"
-searchButton.addEventListener('click', function () { //"ketika tombolnya di klik"
-    const inputKeyword = document.querySelector('.input-keyword'); //"js carikan saya"
-    fetch('http://www.omdbapi.com/?apikey=68aec5a&s=' + inputKeyword.value) //mengembalikan promise, datanya ga lgsung dapet. harus ada method
-        .then(response => response.json()) //ambil data json dari promise
-        .then(response=> {
-            // Ambil hasil search, masukkan ke card
-            const movies = response.Search;
-            let cards = '';
-            movies.forEach(m => {
-                cards += showCards(m);
-            });
-            // Masukkan cards ke dalam container
-            const movieContainer = document.querySelector('.movie-container');
-            movieContainer.innerHTML = cards;
-            // Ketika tombil detail di-klik
-            const modalDetailButton = document.querySelectorAll('.modal-detail-button');
-            modalDetailButton.forEach(btn => { //"kenapa di-foreach?" karena modalDetailButton bentuknya nodelist
-                btn.addEventListener('click', function () {//"kenapa disini pakai func?" karena kita butuh this
-                    // console.log(this); //cek idnya + this jalan apa engga
-                    const imdbid = this.dataset.imdbid; //langsung ambil imdbid
-                    fetch('http://www.omdbapi.com/?apikey=68aec5a&i=' + imdbid)
-                        .then(response => response.json())
-                        .then(m => {
-                            const movieDetail = showMovieDetails(m);
-                            const modalBody = document.querySelector('.modal-body');
-                            modalBody.innerHTML = movieDetail;
-                        });
-                })
-            });
-        });
+const searchButton = document.querySelector('.search-button');
+searchButton.addEventListener('click', async function () { //"js, nih aku kasih tau klo nanti ada fungsi yg async" - baris 6
+    const inputKeyword = document.querySelector('.input-keyword');
+    const movies = await getMovies(inputKeyword.value); //(sebelum dikasi await) Jadi "sinkronous" karena kita masukin ke variabel (padahal fetch buat async). JS gatau klo movies async. 
+    updateUI(movies);
 });
+
+// Event binding
+// Kita kasih event ke elemen yg awalnya belum ada(terlihat) tp event itu tetep bisa berjalan
+// kita simpan eventhandlernya ke document
+document.addEventListener('click', async function (element) {
+    // console.log(element);//ambil semua elemen yg kita klik
+    if (element.target.classList.contains('modal-detail-button')) {
+        const imdbid = element.target.dataset.imdbid;
+        const movieDetail = await getMovieDetail(imdbid);
+        updateUIDetail(movieDetail);
+    }
+});
+
+function getMovies(keyword) {
+    return fetch('http://www.omdbapi.com/?apikey=68aec5a&s=' + keyword) 
+        .then(response => response.json())
+        .then(response=> response.Search);
+}
+
+function getMovieDetail(imdbid) {
+    return fetch('http://www.omdbapi.com/?apikey=68aec5a&i=' + imdbid)
+        .then(response => response.json())
+        .then(m => m);
+}
+
+function updateUI(movies) {
+    let cards = '';
+    movies.forEach(m => {
+        cards += showCards(m);
+    });
+    const movieContainer = document.querySelector('.movie-container');
+    movieContainer.innerHTML = cards;
+}
+
+function updateUIDetail(m) {
+    const movieDetail = showMovieDetails(m);
+    const modalBody = document.querySelector('.modal-body');
+    modalBody.innerHTML = movieDetail;
+}
 
 function showCards(m) {
     return  `<div class="col-md-4 my-5">
