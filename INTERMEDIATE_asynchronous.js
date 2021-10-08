@@ -1,7 +1,7 @@
 // Asinkron (multitred) :
 // Callback
 // Promise
-// ajax
+// ajax (methodnya jquery)
 // Async & Await
 
 

@@ -90,4 +90,4 @@ Promise.all([film,cuaca])
         const [film, cuaca] = response; //spread operator/dipisah
         console.log(film);
         console.log(cuaca);
-    })
+    });
