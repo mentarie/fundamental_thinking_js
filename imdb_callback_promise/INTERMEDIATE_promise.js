@@ -27,7 +27,7 @@
 
 // janji1
 //     .then(response => console.log('OK! : '+response))
-//     .then(response => console.log('NOT OK! : '+response));
+//     .catch(response => console.log('NOT OK! : '+response));
 // ------------------------------------------------------------------------------------------------------
 
 
@@ -46,8 +46,14 @@ const janji2 = new Promise((resolve, reject) => {
         }, 2000);
     }
 });
+
 console.log("mulai");
-janji1
+// console.log(janji2); //liat pending
+// console.log(janji2.then(() => console.log(janji2))); //lihat proses pending
+
+janji2 //pending ga kelihatan
+    .finally(() => console.log('selesai menunggu!')) //apapun hasilnya, dia akan dijalankan stlh nunggu
     .then(response => console.log('OK! : '+response))
-    .then(response => console.log('NOT OK! : '+response));
+    .catch(response => console.log('NOT OK! : '+response));
+
 console.log("selesai");
