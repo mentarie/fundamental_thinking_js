@@ -1,4 +1,4 @@
-const string =  readLine();
+const string =  'javascriptloops';//readLine();
 
 function cekVokal(string) {
     let a = ["a","i","u","e","o"]; //untuk filter jika huruf vokal
@@ -16,7 +16,7 @@ function cekVokal(string) {
     }
 }
 
-
+cekVokal(string);
 
 
 
