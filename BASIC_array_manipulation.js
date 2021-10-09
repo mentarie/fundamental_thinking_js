@@ -172,6 +172,10 @@
 // const parts = waktu.split(':');
 
 
+// 25. charAt (untuk ambil data index ke-x dari strig)
+// let firstChar = str.charAt(0) 
+
+
 // notes ---------------------------------------------------------------
 // Darimana sih asal method2 di atas? 
 // Jawaban : Mereka merupakan prototype dari object array
