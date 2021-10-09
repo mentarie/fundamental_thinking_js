@@ -5,7 +5,7 @@
 
 // Sebuah async function dapat memiliki keyword await di dalamnya untuk memberhentikan sementara eksekusi fungsinya
 // sambil menunggu promis-nya selesai
-
+// --------------------------------------------------------------------------------------------------------------------------
 
 //  SOAL
 // Buat penerapan async dan await untuk menampilkan data dengan pending tertentu
@@ -22,7 +22,7 @@ function cobaPromise() {
     });
 }
 
-async function cobaAsync() {
+async function cobaAsync() { //kalau sudah pakai async&await, pakai try+catch untuk handling error
     try {
         const coba = await cobaPromise();
         console.log(coba);
