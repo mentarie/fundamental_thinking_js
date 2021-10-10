@@ -1,19 +1,19 @@
 class Rectangle {
-    constructor(w, h) {
+    constructor(w, h) { //deklarasikan dulu kelas utamanya pakai constructor (bawa argumen)
         this.w = w;
         this.h = h;
     }
 }
 
-class Square extends Rectangle {
-    constructor(s){
-        super(s);
-        this.h = s;
-        this.w = s;
+class Square extends Rectangle { //di child, extend parentsnya
+    constructor(s){ //karna berkurang argumennya, di constructor tulis 1 saja
+        super(s); //deklarasikan di super
+        this.h = s; //masukkan hke dalam s
+        this.w = s; //masukkan w ke dalam s
     }
 }
 
-Rectangle.prototype.area = function () {
+Rectangle.prototype.area = function () { //area direturn menggunakan prototype
     return (this.w*this.h);
 }
 
