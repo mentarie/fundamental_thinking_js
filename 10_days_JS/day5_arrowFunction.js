@@ -11,3 +11,5 @@ console.log(modifyArray(a).toString().split(',').join(' '));
 // SOAL -----------------------------------------------------------------------
 // Modifikasi array, ketika array sudah diinput, index tg ganjil dikali 3
 // Index genap dikali 2
+// hasil yang dikirimkan dari function bisa berbentuk array karena
+// yang diconsole.log arraynya sudah di split
