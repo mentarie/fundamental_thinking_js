@@ -1,6 +1,6 @@
 function regexVar() {
     // Deklarasikan re yg isinya hurus vokal
-    const re = /[aiueo]/;
+    const re = /^[aeiou]$|^([aeiou]).*\1$/;
     return re;
 }
 
