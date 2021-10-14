@@ -1,3 +1,8 @@
+function regexVar() {
+    const re = /[0-9]+/g;
+    return re;
+}
+
 const re = regexVar();
 const s = readLine();
 
