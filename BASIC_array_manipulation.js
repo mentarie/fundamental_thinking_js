@@ -170,11 +170,19 @@
 // 24. split
 // var waktu = ['10:30'];
 // const parts = waktu.split(':');
+// bisa buat jadiin string ke array
+// let angka = '72 65 73 78 75 74 90 81 87 65 55 69 72 78 79 91 100 40 67 77 86';
+// let angkaArray = angka.split(' ');
 
 
 // 25. charAt (untuk ambil data index ke-x dari strig)
 // let firstChar = str.charAt(0) 
 
+
+// 26. array of string ke array of number
+// let angka = '72 65 73 78 75 74 90 81 87 65 55 69 72 78 79 91 100 40 67 77 86';
+// let angkaArray = angka.split(' ');
+// let urutan = angkaArray.sort().map(Number);
 
 // notes ---------------------------------------------------------------
 // Darimana sih asal method2 di atas? 
