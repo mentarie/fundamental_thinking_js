@@ -77,6 +77,11 @@
 //     return a-b;
 // })
 // console.log(angka2.join(' - '));
+//sorting angka 1-100 (lexical)
+// let sortedNumber = numberArray.sort(function(a, b) {
+//     return a - b;
+// }).map(Number);
+
 
 
 // 11. filter
