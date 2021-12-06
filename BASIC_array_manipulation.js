@@ -189,6 +189,11 @@
 // let angkaArray = angka.split(' ');
 // let urutan = angkaArray.sort().map(Number);
 
+
+// 27. cek huruf besar/kecil (lowercase/upercase)
+// const nonLowercaseLetters = /[^a-z]/g;
+// console.log(!nonLowercaseLetters.test(string));
+
 // notes ---------------------------------------------------------------
 // Darimana sih asal method2 di atas? 
 // Jawaban : Mereka merupakan prototype dari object array
